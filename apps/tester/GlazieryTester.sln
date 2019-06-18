@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Glaziery Tester", "GlazieryTester.vcproj", "{5FAADEB2-0273-435C-B387-212449C83C5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		ReleaseEnglish|Win32 = ReleaseEnglish|Win32
+		ReleaseGerman|Win32 = ReleaseGerman|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FAADEB2-0273-435C-B387-212449C83C5D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5FAADEB2-0273-435C-B387-212449C83C5D}.Debug|Win32.Build.0 = Debug|Win32
+		{5FAADEB2-0273-435C-B387-212449C83C5D}.ReleaseEnglish|Win32.ActiveCfg = ReleaseEnglish|Win32
+		{5FAADEB2-0273-435C-B387-212449C83C5D}.ReleaseEnglish|Win32.Build.0 = ReleaseEnglish|Win32
+		{5FAADEB2-0273-435C-B387-212449C83C5D}.ReleaseGerman|Win32.ActiveCfg = ReleaseGerman|Win32
+		{5FAADEB2-0273-435C-B387-212449C83C5D}.ReleaseGerman|Win32.Build.0 = ReleaseGerman|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

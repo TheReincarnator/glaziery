@@ -1,0 +1,263 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resources.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+    "Resources.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "MainFrame.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 250, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Glaziery Font File Creator V1.0.0"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Font:",IDC_STATIC,6,10,17,8
+    EDITTEXT        IDC_MAIN_FONT,24,8,174,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_MAIN_FONT_BROWSE,202,8,42,14
+    LTEXT           "Background:",IDC_STATIC,6,30,42,8
+    CONTROL         "",IDC_MAIN_GRADIENTS,"SysListView32",LVS_REPORT |
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,42,132,123
+    PUSHBUTTON      "&Add...",IDC_MAIN_GRADIENTS_ADD,6,170,50,14
+    PUSHBUTTON      "&Remove",IDC_MAIN_GRADIENTS_REMOVE,60,170,50,14
+    LTEXT           "Gradient angle:",IDC_STATIC,144,30,49,8
+    EDITTEXT        IDC_MAIN_GRADIENTANGLE,201,29,42,14,ES_AUTOHSCROLL
+    LTEXT           "Preview:",IDC_STATIC,144,52,28,8
+    PUSHBUTTON      "R&efresh",IDC_MAIN_PREVIEW_REFRESH,194,51,50,12
+    PUSHBUTTON      "&Save font...",IDC_MAIN_SAVEFONT,144,169,100,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "Thomas Jacob"
+            VALUE "FileDescription", "FontCreator"
+            VALUE "FileVersion", "none"
+            VALUE "InternalName", "FontCreator"
+            VALUE "LegalCopyright", "Copyright (C) 2018"
+            VALUE "OriginalFilename", "FontCreator.exe"
+            VALUE "ProductName", "FontCreator"
+            VALUE "ProductVersion", "none"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 211
+        BOTTOMMARGIN, 110
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "Application.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "FontCreator\nUnnamed\nUnnamed\nDocument\n.doc\nFontCreator.Document\nDocument"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "FontCreator"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information.\nAbout"
+    ID_APP_EXIT             "Quit the FontCreator.\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection.\nErase"
+    ID_EDIT_COPY            "Copy the selection and put it on the clipboard.\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the clipboard.\nCut"
+    ID_EDIT_PASTE           "Insert clipboard contents.\nPaste"
+    ID_EDIT_UNDO            "Undo the last action.\nUndo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar.\nToggle tool bar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar.\nToggle status bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size.\nChange window size"
+    AFX_IDS_SCMOVE          "Change the window position.\nChange window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon.\nIconify"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size.\nFull size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window.\nNext window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window.\nPrevious window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents.\nClose window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size.\nRestore window"
+    AFX_IDS_SCTASKLIST      "Activate task list.\nActivate task list"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_ID_PREVIEW_CLOSE    "Close the print preview.\nClose preview"
+    AFX_ID_PREVIEW_NUMPAGE  "Show one or two pages at once.\nOne or two pages"
+    AFX_ID_PREVIEW_NEXT     "Show next page.\nNext page"
+    AFX_ID_PREVIEW_PREV     "Show previous page.\nPrevious page"
+    AFX_ID_PREVIEW_PRINT    "Change to the print dialog.\nPrint"
+    AFX_ID_PREVIEW_ZOOMIN   "Zoom in.\nZoom in"
+    AFX_ID_PREVIEW_ZOOMOUT  "Zoom out.\nZoom out"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HUMANAPPLICATIONNAME "FontCreator"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

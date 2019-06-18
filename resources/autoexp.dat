@@ -1,0 +1,8 @@
+[AutoExpand]
+
+; Glaziery
+glaziery::Vector=<,t> <x>,<y>
+glaziery::Component=<,t> pos=<position.x>,<position.y> size=<size.x>,<size.y>
+glaziery::Font=<,t> <fileId.Data,s>
+glaziery::Image=<,t> <fileId.Data,s>
+glaziery::Window=<,t> pos=<position.x>,<position.y> size=<size.x>,<size.y> <title,s>

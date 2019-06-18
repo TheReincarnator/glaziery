@@ -1,0 +1,85 @@
+<project-config name="Font Creator" canonical-name="FontCreator" default-target="Debug" template="project.xsl">
+
+	<delete path="FontCreator.ncb"/>
+	<delete path="FontCreator.sln"/>
+	<delete path="FontCreator.suo"/>
+	<delete path="FontCreator.vcproj"/>
+
+	<folder name="Application" root=".\src" build="true">
+		<files build="true">
+			<include pattern="**\*.cpp"/>
+			<include pattern="**\*.h"/>
+			<include pattern="**\*.inl"/>
+		</files>
+	</folder>
+
+	<folder name="MFCTriExt" root="..\..\..\MFCTriExt">
+		<files build="false">
+			<include pattern="**\*.cpp"/>
+			<include pattern="**\*.h"/>
+			<include pattern="**\*.inl"/>
+			<exclude pattern="MFCTriExtSources.cpp"/>
+		</files>
+
+		<files build="true">
+			<include pattern="MFCTriExtSources.cpp"/>
+		</files>
+	</folder>
+
+	<folder name="ToolBox" root="..\..\..\ToolBox">
+		<files build="false">
+			<include pattern="**\*.cpp"/>
+			<include pattern="**\*.h"/>
+			<include pattern="**\*.inl"/>
+			<exclude pattern="ToolBoxSources.cpp"/>
+		</files>
+
+		<files build="true">
+			<include pattern="ToolBoxSources.cpp"/>
+		</files>
+	</folder>
+
+	<folder name="Bin" root=".\bin">
+		<files build="false">
+			<include pattern="**"/>
+		</files>
+	</folder>
+
+	<folder name="Resources" root=".\resources">
+		<files build="true">
+			<include pattern="**"/>
+		</files>
+	</folder>
+
+	<all-targets>
+		<define value="_USE_MATH_DEFINES"/>
+		<define value="_WINDOWS"/>
+		<define value="AFX_TARG_NEU"/>
+		<define value="MFCTRIEXT"/>
+		<define value="WIN32"/>
+
+		<link name="advapi32.lib"/>
+		<link name="amstrmid.lib"/>
+		<link name="gdi32.lib"/>
+		<link name="gdiplus.lib"/>
+		<link name="kernel32.lib"/>
+		<link name="ksproxy.lib"/>
+		<link name="ksuser.lib"/>
+		<link name="msdmo.lib"/>
+		<link name="quartz.lib"/>
+		<link name="shell32.lib"/>
+		<link name="strmiids.lib"/>
+		<link name="user32.lib"/>
+		<link name="winmm.lib"/>
+	</all-targets>
+
+	<target canonical-name="Debug" mfc="2" debug="true" culture="1033">
+		<define value="_AFXDLL"/>
+		<define value="AFX_TARG_ENU"/>
+	</target>
+
+	<target canonical-name="ReleaseEnglish" mfc="0" debug="false" culture="1033">
+		<define value="AFX_TARG_ENU"/>
+	</target>
+
+</project-config>
